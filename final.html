@@ -1,158 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="styles.css">
-    
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Design</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header>
+    <header style="display: flex; align-items: center; padding: 20px; gap: 20px;">
+
         <a href="index.html">
-            images/teamA.jpg
+            <img src="images/teamA.jpg" alt="Team A"
+                style="width:80px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
         </a>
-        <h1>Final Design</h1>
+
+        <h1 style="color:#1a73e8; margin: 0;">
+            Final Design
+        </h1>
+
     </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="prototype1.html">Prototype 1</a>
-        <a href="prototype2.html">Prototype 2</a>
-        <a href="final.html">Final Design</a>
-    </nav>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="prototype1.html">Prototype 1</a>
+            <a href="prototype2.html">Prototype 2</a>
+            <a href="final.html">Final Design</a>
+        </nav>
+        <div class="container">
 
-    <div class="container">
+            <div class="image-row">
+                <img src="images/image1.jpg">
+            </div>
 
-        <div class="image-row">
-            images/image1.jpg
+            <h1>Final Design: ESP32-C3 Protective Case</h1>
+
+            <!-- Final Design Overview -->
+            <div class="card">
+                <h2>Design Overview</h2>
+
+                <p>
+                    The final design successfully improves on previous prototypes by using accurate measurements,
+                    improving usability, and adding proper ventilation. This results in a reliable, durable, and
+                    fully functional protective case for the ESP32-C3.
+                </p>
+
+                <ul>
+                    <li><strong>Perfect Fit:</strong> All dimensions were corrected, ensuring the lid fits securely.
+                    </li>
+                    <li><strong>Improved Usability:</strong> Easy access to ports, buttons, and GPIO pins.</li>
+                    <li><strong>Ventilation:</strong> Added vents to reduce heat buildup.</li>
+                    <li><strong>Durability:</strong> Strong structure suitable for long-term use.</li>
+                    <li><strong>3D Print Optimized:</strong> Smooth and efficient printing process. Minimum material
+                        used and cost effective</li>
+                </ul>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="card">
+                <h2>Prototype Comparison</h2>
+
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Prototype 1</th>
+                        <th>Prototype 2</th>
+                        <th>Final Design</th>
+                    </tr>
+
+                    <tr>
+                        <td>Fit</td>
+                        <td class="bad">Loose</td>
+                        <td class="mid">Better</td>
+                        <td class="good">Perfect</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ventilation</td>
+                        <td class="bad">None</td>
+                        <td class="mid">Basic</td>
+                        <td class="good">Improved</td>
+                    </tr>
+
+                    <tr>
+                        <td>Durability</td>
+                        <td class="bad">Weak</td>
+                        <td class="mid">Stronger</td>
+                        <td class="good">Very Strong</td>
+                    </tr>
+
+                    <tr>
+                        <td>Accessibility</td>
+                        <td class="bad">Limited</td>
+                        <td class="mid">Improved</td>
+                        <td class="good">Excellent</td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <br /> <br />
+            <div>
+
+                <p>You can replace this with a real feedback form later.</p>
+                <form>
+                    <label>Name:</label><br><input type="text"><br><br>
+                    <label>Comments:</label><br><textarea rows="4"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+
+            </div>
+
         </div>
-
-        <div class="card">
-            <h2>Final Design: ESP32-C3 Protective Case</h2>
-
-            <p>
-                The final design successfully improves on previous prototypes by using accurate
-                measurements, improving usability, and adding proper ventilation. This results
-                in a reliable, durable, and fully functional protective case for the ESP32-C3.
-            </p>
-
-            <ul>
-                <li><strong>Perfect Fit:</strong> All dimensions were corrected, ensuring the lid fits securely.</li>
-                <li><strong>Improved Usability:</strong> Easy access to USB ports, buttons, and GPIO pins.</li>
-                <li><strong>Ventilation:</strong> Ventilation slots were added to reduce heat buildup.</li>
-                <li><strong>Durability:</strong> Strong structure suitable for long-term use.</li>
-                <li><strong>3D Print Optimized:</strong> Uses minimal material while remaining cost-effective.</li>
-            </ul>
-        </div>
-
-        <div class="card">
-            <h2>Prototype Comparison</h2>
-
-            <table>
-                <tr>
-                    <th>Feature</th>
-                    <th>Prototype 1</th>
-                    <th>Prototype 2</th>
-                    <th>Final Design</th>
-                </tr>
-
-                <tr>
-                    <td>Fit</td>
-                    <td class="bad">Loose</td>
-                    <td class="mid">Better</td>
-                    <td class="good">Perfect</td>
-                </tr>
-
-                <tr>
-                    <td>Ventilation</td>
-                    <td class="bad">None</td>
-                    <td class="mid">Basic</td>
-                    <td class="good">Improved</td>
-                </tr>
-
-                <tr>
-                    <td>Durability</td>
-                    <td class="bad">Weak</td>
-                    <td class="mid">Stronger</td>
-                    <td class="good">Very Strong</td>
-                </tr>
-
-                <tr>
-                    <td>Accessibility</td>
-                    <td class="bad">Limited</td>
-                    <td class="mid">Improved</td>
-                    <td class="good">Excellent</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="card">
-            <h2>Testing Results</h2>
-
-            <p>
-                The final ESP32-C3 protective case was tested to ensure it met all project requirements.
-                Testing focused on fit, accessibility, ventilation, durability, and print quality.
-            </p>
-
-            <ul>
-                <li><strong>Fit Test:</strong> The ESP32-C3 board fitted securely inside the case with no unwanted movement.</li>
-                <li><strong>Accessibility Test:</strong> USB ports, buttons, and GPIO pins remained accessible.</li>
-                <li><strong>Ventilation Test:</strong> Ventilation slots allowed airflow and helped minimize heat buildup.</li>
-                <li><strong>Durability Test:</strong> The case maintained its shape and strength during normal handling.</li>
-                <li><strong>3D Printing Test:</strong> The design printed successfully with minimal support material and no major defects.</li>
-            </ul>
-
-            <p>
-                All tests were completed successfully, confirming that the final design met the project requirements.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Conclusion</h2>
-
-            <p>
-                Throughout the design process, multiple prototypes were developed, tested, and evaluated to improve the
-                overall quality of the ESP32-C3 protective case. Feedback from earlier prototypes was used to refine the
-                dimensions, improve accessibility, and introduce effective ventilation.
-            </p>
-
-            <p>
-                The final design provides a secure fit for the ESP32-C3 while allowing easy access to all essential
-                components. It is durable, practical, and optimized for efficient 3D printing.
-            </p>
-
-            <p>
-                Overall, the project successfully demonstrates the engineering design process by identifying problems,
-                creating solutions, testing prototypes, and producing a final design that meets the intended requirements.
-            </p>
-        </div>
-
-        <div class="card">
-            <h2>Feedback Form</h2>
-
-            <p>Please leave your feedback about the final design.</p>
-
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="comments">Comments:</label><br>
-                <textarea id="comments" name="comments" rows="4"></textarea><br><br>
-
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-
-    </div>
-
-    <footer>
-        Assignment Project
-    </footer>
-
+        <footer>Assignment Project</footer>
 </body>
 
 </html>
