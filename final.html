@@ -2,72 +2,73 @@
 <html>
 
 <head>
-    <title>Final Design</title>
+    <title>Prototype 1</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+     <header style="display: flex; align-items: center; padding: 20px; gap: 20px;">
 
-    <header style="display: flex; align-items: center; padding: 20px; gap: 20px;">
+    <a href="index.html">
+        <img src="images/teamA.jpg" alt="Team A"
+            style="width:80px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
+    </a>
 
-        <a href="index.html">
-            <img src="images/teamA.jpg" alt="Team A"
-                style="width:80px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2);">
-        </a>
-
-        <h1 style="color:#1a73e8; margin: 0;">
+        <h1 style="color:#1a73e8; margin:0;">
             Final Design
         </h1>
 
     </header>
 
-        <nav>
-            <a href="index.html">Home</a>
+    <nav>
+           <a href="index.html">Home</a>
             <a href="prototype1.html">Prototype 1</a>
             <a href="prototype2.html">Prototype 2</a>
             <a href="final.html">Final Design</a>
-        </nav>
-        <div class="container">
+    </nav>
 
-            <div class="image-row">
-                <img src="images/image1.jpg">
+    <main class="container">
+
+        <div class="image-row">
+                <img src="images/image3.jpg">
             </div>
 
-            <h1>Final Design: ESP32-C3 Protective Case</h1>
+        <h2>Final Design: ESP32-C3 Protective Case</h2>
 
-            <!-- Final Design Overview -->
-            <div class="card">
-                <h2>Design Overview</h2>
+        <!-- Final Design Overview -->
+        <div class="card">
+            <h2>Design Overview</h2>
 
-                <p>
-                    The final design successfully improves on previous prototypes by using accurate measurements,
-                    improving usability, and adding proper ventilation. This results in a reliable, durable, and
-                    fully functional protective case for the ESP32-C3.
-                </p>
+            <p>
+                The final design successfully improves on previous prototypes by using accurate measurements,
+                improving usability, and adding proper ventilation. This results in a reliable, durable,
+                and fully functional protective case for the ESP32-C3.
+            </p>
 
-                <ul>
-                    <li><strong>Perfect Fit:</strong> All dimensions were corrected, ensuring the lid fits securely.
-                    </li>
-                    <li><strong>Improved Usability:</strong> Easy access to ports, buttons, and GPIO pins.</li>
-                    <li><strong>Ventilation:</strong> Added vents to reduce heat buildup.</li>
-                    <li><strong>Durability:</strong> Strong structure suitable for long-term use.</li>
-                    <li><strong>3D Print Optimized:</strong> Smooth and efficient printing process. Minimum material
-                        used and cost effective</li>
-                </ul>
-            </div>
+            <ul>
+                <li><strong>Perfect Fit:</strong> All dimensions were corrected, ensuring the lid fits securely.</li>
+                <li><strong>Improved Usability:</strong> Easy access to ports, buttons, and GPIO pins.</li>
+                <li><strong>Ventilation:</strong> Added vents to reduce heat buildup.</li>
+                <li><strong>Durability:</strong> Strong structure suitable for long-term use.</li>
+                <li><strong>3D Print Optimized:</strong> Smooth and efficient printing process, using minimal material and remaining cost-effective.</li>
+            </ul>
+        </div>
 
-            <!-- Comparison Table -->
-            <div class="card">
-                <h2>Prototype Comparison</h2>
+        <!-- Comparison Table -->
+        <div class="card">
+            <h2>Prototype Comparison</h2>
 
-                <table>
+            <table>
+                <thead>
                     <tr>
                         <th>Feature</th>
                         <th>Prototype 1</th>
                         <th>Prototype 2</th>
                         <th>Final Design</th>
                     </tr>
+                </thead>
 
+                <tbody>
                     <tr>
                         <td>Fit</td>
                         <td class="bad">Loose</td>
@@ -95,25 +96,32 @@
                         <td class="mid">Improved</td>
                         <td class="good">Excellent</td>
                     </tr>
-
-                </table>
-
-            </div>
-
-            <br /> <br />
-            <div>
-
-                <p>You can replace this with a real feedback form later.</p>
-                <form>
-                    <label>Name:</label><br><input type="text"><br><br>
-                    <label>Comments:</label><br><textarea rows="4"></textarea><br><br>
-                    <button type="submit">Submit</button>
-                </form>
-
-            </div>
-
+                </tbody>
+            </table>
         </div>
-        <footer>Assignment Project</footer>
+
+        <div class="card">
+            <h2>Feedback Form</h2>
+
+            <p>You can replace this with a real feedback form later.</p>
+
+            #
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        Assignment Project
+    </footer>
+
 </body>
 
 </html>
